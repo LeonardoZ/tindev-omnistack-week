@@ -16,34 +16,34 @@ For development, use **yarn dev**. It'll use nodemon for autoreload. FOr anythin
 
 Returns all devs that aren't liked or disliked yet by the logged user.
 
-**URI**: /devs
-**METHOD**: GET
-**HEADERS**: user : logged user id
-**STATUS**: 200
+- **URI**: /devs
+- **METHOD**: GET
+- **HEADERS**: user : logged user id
+- **STATUS**: 200
 
 ## Save Dev
 
 Save dev from Github username into the system if isn't already saved, returning the dev information.
 
-**URI**: /devs
-**METHOD**: POST
-**BODY**: { username: "xxx" } 
-**STATUS**: 200
+- **URI**: /devs
+- **METHOD**: POST
+- **BODY**: { username: "xxx" } 
+- **STATUS**: 200
 
 ## Like Dev
 
 Like another dev for the logged user.
 
-**URI**: /devs/:devId/likes - :devId: id of the dev to be liked.
-**METHOD**: POST
-**HEADERS**: user : logged user id 
-**STATUS**: 200 | 400 (if path does not exist)
+- **URI**: /devs/:devId/likes - :devId: id of the dev to be liked.
+- **METHOD**: POST
+- **HEADERS**: user : logged user id 
+- **STATUS**: 200 | 400 (if path does not exist)
 
 ## Like Dev
 
 Like another dev for the logged user.
 
-**URI**: /devs/:devId/dislikes - :devId: id of the dev to be liked.
-**METHOD**: POST
-**HEADERS**: user : logged user id 
-**STATUS**: 200 | 400 (if path does not exist)
+- **URI**: /devs/:devId/dislikes - :devId: id of the dev to be liked.
+- **METHOD**: POST
+- **HEADERS**: user : logged user id 
+- **STATUS**: 200 | 400 (if path does not exist)
