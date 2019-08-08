@@ -14,7 +14,6 @@ module.exports = {
 
     if (targetDev.dislikes.includes(loggedDev._id)) {
       console.log("Não Deu Match!");
-      return res.json(loggedDev);
     }
 
     loggedDev.dislikes.push(targetDev._id);

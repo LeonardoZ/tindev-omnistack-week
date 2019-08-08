@@ -14,7 +14,6 @@ module.exports = {
 
     if (targetDev.likes.includes(loggedDev._id)) {
       console.log("Deu Match!");
-      return res.json(loggedDev);
     }
 
     loggedDev.likes.push(targetDev._id);
